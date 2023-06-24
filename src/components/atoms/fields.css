@@ -1,0 +1,13 @@
+body {
+    margin: auto;
+    padding: 0;
+}
+
+input {
+    height: 8vh;
+    width: 12vw;
+    border-radius: 10px;
+    background: #8080a196;
+    color: #fff;
+    border: 2px solid #000;
+}

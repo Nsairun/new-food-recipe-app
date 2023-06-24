@@ -1,0 +1,11 @@
+body {
+    margin: auto;
+    padding: 0;
+}
+
+img {
+    height: 15vh;
+    width: 18vw;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px #704d0270;
+}

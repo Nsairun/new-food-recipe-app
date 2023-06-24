@@ -1,0 +1,14 @@
+body {
+    margin: auto;
+    padding: 0;
+}
+
+button {
+    height: 8vh;
+    width: fit-content;
+    padding: 8px;
+    color: #000;
+    border: none;
+    background: #9de8eb96;
+    border-radius: 10px;
+}
