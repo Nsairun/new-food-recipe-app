@@ -2,10 +2,10 @@
 import React from 'react';
 import './img.css';
 
-function Img({ img }) {
+function Img({ image }) {
   return (
     <div>
-      <img src={img} alt="" />
+      <img src={image} alt="" />
     </div>
   );
 }

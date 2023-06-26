@@ -11,7 +11,22 @@ body {
     gap: 1rem;
 }
 
-.landingPage img {
-    height: 16vh;
-    width: 20vw;
+.heading {
+    background-image: url(../images/steak.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f0f8ff;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px #0d0d0e;
+}
+
+.heading h2 {
+    background: #0d0d0e;
+    padding: 5px;
 }

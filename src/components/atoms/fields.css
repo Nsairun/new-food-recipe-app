@@ -5,9 +5,8 @@ body {
 
 input {
     height: 8vh;
-    width: 12vw;
+    width: 100%;
     border-radius: 10px;
-    background: #8080a196;
-    color: #fff;
+    color: #0a0a0a;
     border: 2px solid #000;
 }

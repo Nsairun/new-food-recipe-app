@@ -4,7 +4,7 @@ body {
 }
 
 img {
-    height: 15vh;
+    height: fit-content;
     width: 18vw;
     border-radius: 10px;
     box-shadow: 5px 10px 15px #704d0270;

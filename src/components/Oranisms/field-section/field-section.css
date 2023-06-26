@@ -10,17 +10,21 @@ body {
     justify-content: center;
 }
 
-.field {
+.add-recipe .foodField {
     display: flex;
-    flex-direction: column;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     border: 1px solid #000;
     border-radius: 10px;
-    background: rgba(128, 128, 128, 0.479);
+    background: #8080807a;
     box-shadow: 5px 10px 15px #07070770;
+    text-align: center;
+    padding: 40px;
+    width: fit-content;
 }
 
 .add-recipe button {
     margin: auto;
+    padding: 5px;
 }
