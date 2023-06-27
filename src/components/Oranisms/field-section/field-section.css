@@ -10,21 +10,41 @@ body {
     justify-content: center;
 }
 
-.add-recipe .foodField {
+.deco {
     display: flex;
-    gap: 1rem;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+    border: 0.5px solid #000;
+    border-style: dotted;
+    border-radius: 10px;
+    background: #000;
+}
+
+.deco img {
+    height: fit-content;
+    width: fit-content;
+}
+
+#foodField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     border: 1px solid #000;
     border-radius: 10px;
-    background: #8080807a;
+    background: #f35004b7;
     box-shadow: 5px 10px 15px #07070770;
     text-align: center;
     padding: 40px;
-    width: fit-content;
 }
 
 .add-recipe button {
     margin: auto;
-    padding: 5px;
+    margin-top: 5px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
 }

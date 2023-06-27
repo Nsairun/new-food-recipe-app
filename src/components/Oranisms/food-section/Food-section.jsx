@@ -24,7 +24,7 @@ function FoodSection() {
   }
 
   return (
-    <div className="foodcontainer">
+    <div className="foodContainer">
       {foodData?.map((food) => (
         <div className="food-section">
           <h1>{food.title}</h1>

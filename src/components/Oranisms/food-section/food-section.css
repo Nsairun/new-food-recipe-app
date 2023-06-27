@@ -3,6 +3,14 @@ body {
     padding: 0;
 }
 
+.foodContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .food-section {
     display: flex;
     flex-direction: column;

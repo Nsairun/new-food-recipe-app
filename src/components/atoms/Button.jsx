@@ -6,7 +6,7 @@ function Button({ action, name }) {
   return (
     <div>
       <button type="button" onClick={action}>
-        {name || 'button'}
+        {name || ''}
       </button>
     </div>
   );

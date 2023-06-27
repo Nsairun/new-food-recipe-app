@@ -8,7 +8,7 @@ body {
     justify-content: space-around;
     background: #8080807c;
     border: 1px solid #000;
-    padding: 3px;
+    padding: 2px;
     gap: 40rem;
 }
 
@@ -17,7 +17,8 @@ body {
     font-size: 24px;
     color: #000;
     font-weight: 700;
-    padding: 3px;
+    padding: 10px;
+    background: #f35004b7;
 }
 
 .navbar-search {
@@ -26,4 +27,10 @@ body {
     justify-content: center;
     gap: 1rem;
     padding: 5px;
+}
+
+.navbar-search button {
+    width: fit-content;
+    font-size: larger;
+    color: #000;
 }
