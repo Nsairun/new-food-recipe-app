@@ -1,4 +1,4 @@
-export const udateLocaleStorage = (key, update) =>
+export const updateLocaleStorage = (key, update) =>
   localStorage.setItem(key, JSON.stringify(update));
 
 export const getFromLocalStorage = (key) =>

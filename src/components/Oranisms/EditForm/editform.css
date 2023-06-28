@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background-color: #000000ac;
+}
+
+.edit_form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background-color: #ddd;
+  color: #000;
+
+  width: min(97vw, 500px);
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit_form .close_form {
+  cursor: pointer;
+  margin: 0 0 3rem;
+}
+
+.edit_form .edit_div {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.edit_form .edit_div input {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border: none;
+  padding: 5px;
+}
+
+.edit_form .edit_div input:focus {
+  outline: none;
+}
+
+.edit_form button {
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  color: #f5f5f5;
+  background-color: #000;
+  font-weight: 600;
+  border: none;
+  margin: 2rem auto;
+}

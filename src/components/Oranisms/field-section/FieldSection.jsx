@@ -3,7 +3,7 @@ import './field-section.css';
 import { UseFoodContext } from '../../../context/FoodContext';
 import {
   getFromLocalStorage,
-  udateLocaleStorage,
+  updateLocaleStorage,
 } from '../../../service/utils';
 import image from '../../images/steak.jpg';
 
@@ -22,7 +22,7 @@ function FieldSection() {
     }
     const newFoodData = [...getFromLocalStorage('foodData'), formVal];
     setFoodData([...newFoodData]);
-    udateLocaleStorage('foodData', newFoodData);
+    updateLocaleStorage('foodData', newFoodData);
   };
 
   return (

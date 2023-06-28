@@ -6,13 +6,19 @@ import { getFromLocalStorage } from '../service/utils';
 const FoodContext = createContext({});
 export default function ContextProvider({ children }) {
   const [foodData, setFoodData] = useState([]);
+  const [editData, setEditData] = useState({
+    showform: false,
+    data: {},
+  });
 
   useEffect(() => {
     setFoodData([...getFromLocalStorage('foodData')]);
   }, []);
 
   return (
-    <FoodContext.Provider value={{ foodData, setFoodData }}>
+    <FoodContext.Provider
+      value={{ foodData, setFoodData, editData, setEditData }}
+    >
       {children}
     </FoodContext.Provider>
   );
