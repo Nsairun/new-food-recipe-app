@@ -37,6 +37,11 @@ body {
         padding: 0;
     }
 
+    .landingPage {
+        display: block;
+        margin: auto;
+    }
+
     .heading {
         background-image: url(../images/food2.webp);
         background-repeat: no-repeat;
