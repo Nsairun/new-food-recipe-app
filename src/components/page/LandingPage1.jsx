@@ -6,7 +6,7 @@ function LandingPage1() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate('/');
+    navigate('/hero');
   }
   return (
     <div className="landing">
