@@ -10,3 +10,13 @@ input {
     color: #0a0a0a;
     border: 2px solid #000;
 }
+
+@media screen and (max-width: 760px) {
+    input {
+        height: 8vh;
+        width: 100%;
+        border-radius: 10px;
+        color: #0a0a0a;
+        border: 2px solid #000;
+    }
+}

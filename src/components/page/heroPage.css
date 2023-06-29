@@ -30,3 +30,25 @@ body {
     background: #0d0d0e;
     padding: 5px;
 }
+
+@media screen and (max-width: 760px) {
+    body {
+        margin: auto;
+        padding: 0;
+    }
+
+    .heading {
+        background-image: url(../images/food2.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: #f0f8ff;
+        font-size: small;
+        border-radius: 5px;
+        box-shadow: 2px 5px 10px #0d0d0e;
+    }
+}
