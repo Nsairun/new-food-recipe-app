@@ -33,7 +33,7 @@ function FoodSection() {
       {editData.showform && (
         <EditForm food={editData.data} setEditData={setEditData} />
       )}
-
+      <h1>Food Section</h1>
       <div className="foodContainer">
         {foodData?.map((food) => (
           <div className="food-section">

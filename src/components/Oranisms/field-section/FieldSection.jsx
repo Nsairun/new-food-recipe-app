@@ -27,7 +27,7 @@ function FieldSection() {
 
   return (
     <div className="add-recipe">
-      <h1>Add your recipe here</h1>
+      <h1>ADD YOUR FOOD RECIPE BELOW</h1>
       <div className="deco">
         <div id="foodField">
           <form onSubmit={handleSubmit}>

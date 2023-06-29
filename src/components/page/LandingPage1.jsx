@@ -12,7 +12,7 @@ function LandingPage1() {
     <div className="landing">
       <h1>WELCOME TO OUR RESTAURANT</h1>
       <p>we have a variety of african meals to offer you</p>
-      <button type="button" onSubmit={handleClick}>
+      <button type="button" onClick={handleClick}>
         Next Page
       </button>
     </div>

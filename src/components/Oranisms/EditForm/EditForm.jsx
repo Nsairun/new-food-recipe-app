@@ -53,7 +53,7 @@ function EditForm({ food, setEditData }) {
         </span>
 
         <div className="edit_div">
-          Title
+          <h3>Title :</h3>
           <input
             type="text"
             placeholder="Edit title"
@@ -63,7 +63,7 @@ function EditForm({ food, setEditData }) {
         </div>
 
         <div className="edit_div">
-          Image
+          <h3>Image :</h3>
           <input
             type="text"
             placeholder="Edit src"
@@ -73,7 +73,7 @@ function EditForm({ food, setEditData }) {
         </div>
 
         <div className="edit_div">
-          description
+          <h3>Description :</h3>
           <input
             type="text"
             placeholder="Edit description"
