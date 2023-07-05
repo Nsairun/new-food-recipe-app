@@ -23,11 +23,16 @@ body {
     border-radius: 10px;
 }
 
+.deco img {
+    height: min(450px);
+    padding: 10px;
+    border-radius: none;
+}
+
 #foodField {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
     border-radius: 10px;
     background: #f8f6f5b7;
     text-align: center;
@@ -46,10 +51,13 @@ body {
     height: min(7vh);
 }
 
+.field {
+    padding: 7px;
+}
+
 .add-recipe button {
-    margin: auto;
-    margin-top: 5px;
-    background-color:#f17704be;
+    margin: 0 auto;
+    background: #f17704be;
     color: #fff;
     padding: 20px;
     align-items: center;

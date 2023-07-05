@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: min(100%, 450px);
+  padding: min(100%, 350px);
   height: 100%;
   width: min(100%);
   padding-top: 0;
@@ -33,6 +33,7 @@ body {
   gap: 2rem;
   color: #f0f8ff;
   font-size: 50px;
+  text-align: center;
 }
 
 .heading h2 {

@@ -31,7 +31,7 @@ function FieldSection() {
       <div className="deco">
         <div id="foodField">
           <form onSubmit={handleSubmit}>
-            <div>
+            <div className="field">
               <p>Food Name</p>
               <input
                 title=""
@@ -40,7 +40,7 @@ function FieldSection() {
                 id="title"
               />
             </div>
-            <div>
+            <div className="field">
               <p>Image Link</p>
               <input
                 src=""
@@ -49,7 +49,7 @@ function FieldSection() {
                 id="src"
               />
             </div>
-            <div>
+            <div className="field">
               <p>Food Description</p>
               <input
                 value={formVal.desc || ''}

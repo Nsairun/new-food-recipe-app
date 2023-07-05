@@ -3,22 +3,24 @@ import React, { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
 import './navBar.css';
 import Button from '../../atoms/Button';
-import file from '../../../img';
+import { UseFoodContext } from '../../../context/FoodContext';
+import { getFromLocalStorage } from '../../../service/utils';
 
 function NavBar() {
   // eslint-disable-next-line no-unused-vars
-  const [food, setFood] = useState(file);
   const [searchVal, setSearchVal] = useState('');
+
+  const { setSearchData } = UseFoodContext();
 
   function handleSearch() {
     if (searchVal === '') {
-      setFood(file.title);
+      setSearchData(null);
       return;
     }
-    const filterBySearch = file.filter((item) =>
-      item.toLowerCase().includes(searchVal.toLocaleLowerCase())
+    const filterBySearch = [...getFromLocalStorage('foodData')].filter(
+      ({ title }) => title.toLowerCase().includes(searchVal.toLowerCase())
     );
-    setFood(filterBySearch);
+    setSearchData(filterBySearch);
   }
 
   return (

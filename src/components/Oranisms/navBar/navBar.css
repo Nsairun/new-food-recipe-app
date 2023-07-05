@@ -44,7 +44,7 @@ body {
   padding: 5px;
   height: fit-content;
   outline: none;
-  width: min(500px);
+  width: min(500px, 100%);
 }
 
 .navbar-search button {
@@ -52,7 +52,7 @@ body {
   font-size: larger;
   border: none;
   border-radius: 0px;
-  color:#f17704e3;
+  color: #f17704e3;
   background: none;
   font-size: 35px;
 }

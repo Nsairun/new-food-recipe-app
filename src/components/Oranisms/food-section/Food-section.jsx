@@ -1,4 +1,4 @@
-import React from 'react-icons';
+import React, { useEffect } from 'react';
 import './food-section.css';
 import { RiDeleteBin5Line } from 'react-icons/ri';
 import { FaRegEdit } from 'react-icons/fa';
@@ -13,7 +13,8 @@ import {
 import EditForm from '../EditForm/EditForm';
 
 function FoodSection() {
-  const { foodData, setFoodData, editData, setEditData } = UseFoodContext();
+  const { foodData, setFoodData, editData, setEditData, searchData } =
+    UseFoodContext();
 
   const handleFavorite = (title) => {
     const foodUpdate = getFromLocalStorage('foodData').map((foodObj) => {
@@ -42,6 +43,14 @@ function FoodSection() {
     setEditData({ showform: true, data });
   }
 
+  useEffect(() => {
+    if (searchData) {
+      setFoodData(searchData);
+    } else {
+      setFoodData([...getFromLocalStorage('foodData')]);
+    }
+  }, [searchData]);
+
   return (
     <>
       {editData.showform && (
@@ -50,7 +59,7 @@ function FoodSection() {
       <h1>Food Section</h1>
       <div className="foodContainer">
         {foodData?.map((food) => (
-          <div className="food-section" key={food.title}>
+          <div className="food-section" key={food.ti}>
             <Img image={food.src} />
             <div className="food-heading">
               <h1>{food.title}</h1>
