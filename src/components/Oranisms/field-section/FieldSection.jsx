@@ -5,7 +5,7 @@ import {
   getFromLocalStorage,
   updateLocaleStorage,
 } from '../../../service/utils';
-import image from '../../images/steak.jpg';
+import image from '../../../images/steak.jpg';
 
 function FieldSection() {
   const [formVal, setFormVal] = useState({});

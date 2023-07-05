@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
+import { CiSearch } from 'react-icons/ci';
 import './navBar.css';
-import Fields from '../../atoms/Fields';
 import Button from '../../atoms/Button';
-import file from '../../../img.json';
+import file from '../../../img';
 
 function NavBar() {
   // eslint-disable-next-line no-unused-vars
@@ -24,13 +24,17 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="Logo">
-        <h1>CHEW</h1>
+        <h1>CHEW!</h1>
       </div>
       <div className="navbar-search">
+        <input
+          type="text"
+          value={searchVal}
+          onChange={(e) => setSearchVal(e.target.value)}
+        />
         <div>
-          <Button action={handleSearch} name="Search" />
+          <Button action={handleSearch} name={<CiSearch />} />
         </div>
-        <Fields onChange={(e) => setSearchVal(e.target.value)} />
       </div>
     </div>
   );

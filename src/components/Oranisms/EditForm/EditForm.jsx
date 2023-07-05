@@ -13,7 +13,7 @@ import { UseFoodContext } from '../../../context/FoodContext';
 function EditForm({ food, setEditData }) {
   const [container, setContainer] = useState({
     id: food.title,
-    food,
+    food: { ...food, fav: false },
   });
 
   const { setFoodData } = UseFoodContext();

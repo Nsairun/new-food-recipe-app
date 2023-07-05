@@ -1,14 +1,14 @@
 import React from 'react';
 import './heroPage.css';
-import NavBar from '../Oranisms/navBar/NavBar';
-import FieldSection from '../Oranisms/field-section/FieldSection';
-import FoodSection from '../Oranisms/food-section/Food-section';
+import NavBar from '../components/Oranisms/navBar/NavBar';
+import FieldSection from '../components/Oranisms/field-section/FieldSection';
+import FoodSection from '../components/Oranisms/food-section/Food-section';
 
 function HeroPage() {
   return (
     <div className="landingPage">
-      <NavBar />
       <div className="heading">
+        <NavBar />
         <h2>Food Recipe App</h2>
       </div>
       <FieldSection />

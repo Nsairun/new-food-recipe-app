@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import LandingPage1 from './components/page/LandingPage1';
-import HeroPage from './components/page/HeroPage';
+import LandingPage1 from './page/LandingPage1';
+import HeroPage from './page/HeroPage';
 
 function App() {
   return (

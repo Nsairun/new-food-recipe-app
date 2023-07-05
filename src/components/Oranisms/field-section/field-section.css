@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 3px;
 }
 
 .add-recipe h1 {
@@ -19,39 +19,44 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    border: 0.5px solid #000;
-    border-style: dotted;
+    box-shadow: 2px 5px 15px #07070770;
     border-radius: 10px;
-    background: #000;
-}
-
-.deco img {
-    height: fit-content;
-    width: fit-content;
 }
 
 #foodField {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    border: 1px solid #000;
+    gap: 2rem;
     border-radius: 10px;
-    background: #f35004b7;
-    box-shadow: 5px 10px 15px #07070770;
+    background: #f8f6f5b7;
     text-align: center;
-    padding: 40px;
+    padding: 60px;
+}
+
+#foodField input {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    height: fit-content;
+    outline: none;
+    border-radius: 5px;
+    border: 0.5px solid#0000006c;
+    width: min(500px);
+    height: min(7vh);
 }
 
 .add-recipe button {
     margin: auto;
     margin-top: 5px;
-    background-color: #000;
+    background-color:#f17704be;
     color: #fff;
     padding: 20px;
     align-items: center;
     justify-content: center;
+    width: min(500px);
+    height: min(7vh);
+    font-size: larger;
 }
 
 @media screen and (max-width: 760px) {

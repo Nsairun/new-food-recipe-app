@@ -1,0 +1,68 @@
+body {
+  margin: auto;
+  padding: 0;
+}
+
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heading {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.247),
+      rgb(3, 3, 3)
+    ),
+    url('../images/food2.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: min(100%, 450px);
+  height: 100%;
+  width: min(100%);
+  padding-top: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  color: #f0f8ff;
+  font-size: 50px;
+}
+
+.heading h2 {
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    margin: auto;
+    padding: 0;
+  }
+
+  .landingPage {
+    display: block;
+    margin: auto;
+  }
+
+  .heading {
+    background-image: url(../images/food2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f0f8ff;
+    font-size: small;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px #0d0d0e;
+  }
+}
