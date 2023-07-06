@@ -23,6 +23,7 @@ function FieldSection() {
     const newFoodData = [...getFromLocalStorage('foodData'), formVal];
     setFoodData([...newFoodData]);
     updateLocaleStorage('foodData', newFoodData);
+    setFormVal({});
   };
 
   return (

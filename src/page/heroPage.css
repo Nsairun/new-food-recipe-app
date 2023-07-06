@@ -15,7 +15,7 @@ body {
   background-image: linear-gradient(
       to bottom,
       rgba(10, 10, 10, 0.247),
-      rgb(3, 3, 3)
+      rgba(3, 3, 3, 0.993)
     ),
     url('../images/food2.webp');
   background-repeat: no-repeat;
@@ -39,6 +39,15 @@ body {
 .heading h2 {
   margin: 0 auto;
   margin-top: 25%;
+}
+
+.favFood button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0f8ff;
+  font-size: 25px;
+  gap: 0.3rem;
 }
 
 @media screen and (max-width: 760px) {

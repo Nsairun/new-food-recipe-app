@@ -60,11 +60,13 @@ body {
     background: #f17704be;
     color: #fff;
     padding: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: min(500px);
     height: min(7vh);
     font-size: larger;
+    opacity: 70%;
 }
 
 @media screen and (max-width: 760px) {

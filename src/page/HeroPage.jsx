@@ -1,6 +1,7 @@
 import React from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './heroPage.css';
+import { BsFastForwardCircleFill } from 'react-icons/bs';
 import NavBar from '../components/Oranisms/navBar/NavBar';
 import FieldSection from '../components/Oranisms/field-section/FieldSection';
 import FoodSection from '../components/Oranisms/food-section/Food-section';
@@ -20,9 +21,9 @@ function HeroPage() {
       </div>
       <FieldSection />
       <div className="favFood">
-        <Outlet />
         <button type="button" onClick={handleClick}>
           Favorite Food
+          <BsFastForwardCircleFill />
         </button>
       </div>
       <FoodSection />

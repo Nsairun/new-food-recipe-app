@@ -9,9 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index path="/" element={<LandingPage1 />} />
-        <Route path="/hero" element={<HeroPage />}>
-          <Route path="fav" element={<FavPage />} />
-        </Route>
+        <Route path="/hero" element={<HeroPage />} />
+        <Route path="fav" element={<FavPage />} />
       </Routes>
     </BrowserRouter>
   );
