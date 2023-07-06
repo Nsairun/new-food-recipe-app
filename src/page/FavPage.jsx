@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './favPage.css';
 import { BsFillRewindFill, BsHouseFill } from 'react-icons/bs';
@@ -6,6 +6,7 @@ import Img from '../components/atoms/Img';
 import { UseFoodContext } from '../context/FoodContext';
 
 function FavPage() {
+  const [favorites, setFavorites] = useState(null);
   const { foodData } = UseFoodContext();
 
   const navigate = useNavigate();
@@ -13,6 +14,13 @@ function FavPage() {
   function handleClick() {
     navigate('/hero');
   }
+
+  useEffect(() => {
+    if (foodData) {
+      const favs = foodData.filter((food) => food.fav === true);
+      setFavorites([...favs]);
+    }
+  }, [foodData]);
 
   return (
     <div className="foodCard">
@@ -24,7 +32,7 @@ function FavPage() {
         </button>
       </div>
       <div className="foodCardContainer">
-        {foodData?.map((food) => (
+        {favorites?.map((food) => (
           <div className="foodCard-section" key={food.title}>
             <Img image={food.src} />
             <div className="foodCard-heading">
