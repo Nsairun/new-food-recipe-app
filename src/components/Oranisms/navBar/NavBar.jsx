@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
 import './navBar.css';
+import { BsFastForwardCircleFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 import Button from '../../atoms/Button';
 import { UseFoodContext } from '../../../context/FoodContext';
 import { getFromLocalStorage } from '../../../service/utils';
@@ -22,11 +24,22 @@ function NavBar() {
     );
     setSearchData(filterBySearch);
   }
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/fav');
+  }
 
   return (
     <div className="navbar">
-      <div className="Logo">
+      <div className="logo">
         <h1>CHEW!</h1>
+        <div className="favFood">
+          <button type="button" onClick={handleClick}>
+            Favorite
+            <BsFastForwardCircleFill />
+          </button>
+        </div>
       </div>
       <div className="navbar-search">
         <input

@@ -58,9 +58,8 @@ function FieldSection() {
                 id="desc"
               />
             </div>
-            <div>
-              <button type="submit">+</button>
-            </div>
+
+            <button type="submit">+</button>
           </form>
         </div>
         <img src={image} alt="decoration" />

@@ -1,76 +1,82 @@
 body {
-    margin: auto;
-    padding: 0;
+  margin: auto;
+  padding: 0;
 }
 
 .add-recipe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
 }
 
 .add-recipe h1 {
-    padding: 40px;
+  padding: 40px;
 }
 
 .deco {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 5px 15px #07070770;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 5px 15px #07070770;
+  border-radius: 10px;
 }
 
 .deco img {
-    height: min(450px);
-    padding: 10px;
-    border-radius: none;
+  height: min(450px);
+  padding: 10px;
+  border-radius: none;
 }
 
 #foodField {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background: #f8f6f5b7;
-    text-align: center;
-    padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f8f6f5b7;
+  text-align: center;
+  width: min(97vw, 550px);
+}
+
+#foodField form {
+  width: 100%;
+  height: fit-content;
+  padding: 55px 10px;
 }
 
 #foodField input {
-    background: transparent;
-    border: none;
-    padding: 5px;
-    height: fit-content;
-    outline: none;
-    border-radius: 5px;
-    border: 0.5px solid#0000006c;
-    width: min(500px);
-    height: min(7vh);
+  background: transparent;
+  border: none;
+  padding: 5px;
+  height: fit-content;
+  outline: none;
+  border-radius: 5px;
+  border: 0.5px solid#0000006c;
+  width: min(500px, 100%);
+  height: min(7vh);
 }
 
 .field {
-    padding: 7px;
+  padding: min(17px);
 }
 
 .add-recipe button {
-    margin: 0 auto;
-    background: #f17704be;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: min(500px);
-    height: min(7vh);
-    font-size: larger;
-    opacity: 70%;
+  margin: 0 auto;
+  background: #f17704be;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(500px, 100%);
+  height: min(7vh);
+  font-size: larger;
+  opacity: 70%;
 }
 
 @media screen and (max-width: 760px) {
-    body {
+  /* body {
         margin: auto;
         padding: 0;
     }
@@ -80,13 +86,22 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
+    } */
+
+  .deco img {
+    display: none;
+  }
+
+  /* #foodField input {
+        width: 100%
     }
 
-    .deco img {
-        display: none;
+    .deco button {
+        width: 50%;
     }
 
     .add-recipe h1 {
         font-size: small;
-    }
+    } */
 }
