@@ -9,12 +9,14 @@ function LandingPage1() {
     navigate('/hero');
   }
   return (
-    <div className="landing">
-      <h1>WELCOME TO OUR RESTAURANT</h1>
-      <p>we have a variety of african meals to offer you</p>
-      <button type="button" onClick={handleClick}>
-        Next Page
-      </button>
+    <div className="landing-container">
+      <div className="landing">
+        <h1>WELCOME TO OUR RESTAURANT</h1>
+        <p>we have a variety of african meals to offer you</p>
+        <button type="button" onClick={handleClick}>
+          Next Page
+        </button>
+      </div>
     </div>
   );
 }
