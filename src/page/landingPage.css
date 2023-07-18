@@ -1,6 +1,9 @@
 body {
   margin: auto;
   padding: 0;
+  background-image: url(../images/food2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .landing {
