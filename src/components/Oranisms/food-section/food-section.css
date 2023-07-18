@@ -11,7 +11,7 @@ body {
   flex-wrap: wrap;
   margin: auto;
   width: min(97%, 1224px);
-  padding: 0 0 3rem;
+  padding: 38px 0 3rem;
 }
 
 .food-section {
@@ -54,9 +54,11 @@ body {
 
 .btn button {
   width: min(100%, 35px);
-  height: 6vh;
-  background: #f17704e3;
+  background: #f17704f8;
   border: 0.5px solid #00000071;
   border-radius: 5px;
   color: #fff;
+  width: 3vw;
+  height: 6vh;
+  padding: 3px;
 }

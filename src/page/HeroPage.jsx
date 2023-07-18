@@ -15,8 +15,8 @@ function HeroPage() {
 
   return (
     <div className="landingPage">
+      <NavBar />
       <div className="heading">
-        <NavBar />
         <h2>Food Recipe App</h2>
       </div>
       <FieldSection />

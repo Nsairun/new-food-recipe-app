@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding-left: 10px;
 }
 
 .logo button {
@@ -20,7 +21,9 @@ body {
   align-items: center;
   justify-content: space-between;
   width: min(100%);
-  background: #0f0f0fc9;
+  background: #0f0f0fd3;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .navbar h1 {
@@ -28,9 +31,9 @@ body {
   font-stretch: expanded;
   font-family: cursive;
   font-size: 30px;
-  color: #f17704e3;
+  color: #f17704f8;
   font-weight: 700;
-  padding: min(10px);
+  padding: 5px;
 }
 
 .navbar-search {

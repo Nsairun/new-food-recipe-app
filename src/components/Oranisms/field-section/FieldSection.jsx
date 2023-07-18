@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './field-section.css';
+import { BsPlusCircleFill } from 'react-icons/bs';
 import { UseFoodContext } from '../../../context/FoodContext';
 import {
   getFromLocalStorage,
@@ -59,7 +60,9 @@ function FieldSection() {
               />
             </div>
 
-            <button type="submit">+</button>
+            <button type="submit">
+              <BsPlusCircleFill />
+            </button>
           </form>
         </div>
         <img src={image} alt="decoration" />

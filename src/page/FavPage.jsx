@@ -4,6 +4,7 @@ import './favPage.css';
 import { BsFillRewindFill, BsHouseFill } from 'react-icons/bs';
 import Img from '../components/atoms/Img';
 import { UseFoodContext } from '../context/FoodContext';
+import NavBar from '../components/Oranisms/navBar/NavBar';
 
 function FavPage() {
   const [favorites, setFavorites] = useState(null);
@@ -24,6 +25,7 @@ function FavPage() {
 
   return (
     <div className="foodCard">
+      <NavBar />
       <div className="foodCard-header">
         <h2>Favorite-Section</h2>
         <button type="button" onClick={handleClick}>
