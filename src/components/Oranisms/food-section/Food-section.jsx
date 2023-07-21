@@ -53,7 +53,7 @@ function FoodSection() {
 
   return (
     <>
-      {editData.showform && (
+      {editData?.showform && (
         <EditForm food={editData.data} setEditData={setEditData} />
       )}
       <h1>Food Section</h1>
