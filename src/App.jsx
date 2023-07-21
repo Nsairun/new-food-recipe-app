@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import LandingPage1 from './components/page/LandingPage1';
-import HeroPage from './components/page/HeroPage';
+import LandingPage1 from './page/LandingPage1';
+import HeroPage from './page/HeroPage';
+import FavPage from './page/FavPage';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<LandingPage1 />} />
         <Route path="/hero" element={<HeroPage />} />
+        <Route path="fav" element={<FavPage />} />
       </Routes>
     </BrowserRouter>
   );
