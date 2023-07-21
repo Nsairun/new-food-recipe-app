@@ -88,6 +88,11 @@ body {
         width: 100%;
     } */
 
+  .add-recipe h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
   .deco img {
     display: none;
   }

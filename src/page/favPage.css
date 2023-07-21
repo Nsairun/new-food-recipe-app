@@ -51,12 +51,14 @@ body {
     padding: 3px;
     border-radius: 5px;
     height: fit-content;
-    width: 20vw;
+    width: 25vw;
+    height: fit-content;
 }
 
 .foodCard-section img {
-    height: min(100%);
-    width: min(100%);
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
 }
 
 .foodCard-heading {
@@ -71,4 +73,20 @@ body {
 
 .foodCard-heading h1 {
     font-size: 15px;
+}
+
+@media screen and (max-width: 760px) {
+    .foodCard {
+        display: block;
+    }
+
+    .foodCard-section {
+        width: 100%;
+    }
+
+    .foodCard-section img {
+        width: 100%;
+        height: 100%;
+    }
+
 }
