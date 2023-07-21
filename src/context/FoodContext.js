@@ -1,6 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-no-constructed-context-values */
-import React, { useContext, createContext, useState, useEffect } from 'react';
+import React, {
+  useContext,
+  createContext,
+  useState,
+  useEffect,
+  useRef,
+} from 'react';
 import { getFromLocalStorage } from '../service/utils';
 
 const FoodContext = createContext({});
@@ -11,6 +17,8 @@ export default function ContextProvider({ children }) {
     showform: false,
     data: {},
   });
+
+  const foodRef = useRef(); // reference to the food being searched
 
   useEffect(() => {
     setFoodData([...getFromLocalStorage('foodData')]);
@@ -25,6 +33,7 @@ export default function ContextProvider({ children }) {
         setEditData,
         searchData,
         setSearchData,
+        foodRef,
       }}
     >
       {children}

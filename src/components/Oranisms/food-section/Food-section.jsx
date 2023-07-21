@@ -13,7 +13,7 @@ import {
 import EditForm from '../EditForm/EditForm';
 
 function FoodSection() {
-  const { foodData, setFoodData, editData, setEditData, searchData } =
+  const { foodData, setFoodData, editData, setEditData, searchData, foodRef } =
     UseFoodContext();
 
   const handleFavorite = (title) => {
@@ -57,7 +57,7 @@ function FoodSection() {
         <EditForm food={editData.data} setEditData={setEditData} />
       )}
       <h1>Food Section</h1>
-      <div className="foodContainer">
+      <div ref={foodRef} className="foodContainer">
         {foodData?.map((food) => (
           <div className="food-section" key={food.ti}>
             <Img image={food.src} />

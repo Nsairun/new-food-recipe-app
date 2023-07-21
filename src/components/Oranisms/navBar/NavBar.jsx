@@ -12,7 +12,7 @@ function NavBar() {
   // eslint-disable-next-line no-unused-vars
   const [searchVal, setSearchVal] = useState('');
 
-  const { setSearchData } = UseFoodContext();
+  const { setSearchData, foodRef } = UseFoodContext();
 
   function handleSearch() {
     if (searchVal === '') {
@@ -23,6 +23,7 @@ function NavBar() {
       ({ title }) => title.toLowerCase().includes(searchVal.toLowerCase())
     );
     setSearchData(filterBySearch);
+    window.scrollTo(0, foodRef.current.offsetTop);
   }
   const navigate = useNavigate();
 
