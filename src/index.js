@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ContextProvider from './context/FoodContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ContextProvider>
+      <App />
+    </ContextProvider>
   </React.StrictMode>
 );
 
@@ -15,3 +18,26 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import LandingPage from './components/page/LandingPage1';
+// import HeroPage from './components/page/HeroPage';
+// // import App from './App';
+
+// const route = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <LandingPage />,
+//   },
+//   {
+//     path: '/hero',
+//     element: <HeroPage />,
+//   },
+// ]);
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <RouterProvider router={route} />
+//   </React.StrictMode>
+// );
