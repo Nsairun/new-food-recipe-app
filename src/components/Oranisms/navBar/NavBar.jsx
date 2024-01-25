@@ -11,7 +11,7 @@ function NavBar() {
       </div>
       <div className="navbar-search">
         <Fields />
-        <Button />
+        <Button props="search" />
       </div>
     </div>
   );

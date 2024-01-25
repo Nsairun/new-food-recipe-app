@@ -6,7 +6,7 @@ import FieldSection from '../Oranisms/field-section/Field-section';
 import FoodSection from '../Oranisms/food-section/Food-section';
 import image from '../../img.json';
 
-function LandingPage() {
+function HeroPage() {
   return (
     <div className="landingPage">
       <NavBar />
@@ -17,4 +17,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default HeroPage;

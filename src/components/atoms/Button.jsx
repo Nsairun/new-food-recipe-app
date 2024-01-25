@@ -1,10 +1,10 @@
 import React from 'react';
 import './button.css';
 
-function Button() {
+function Button(props) {
   return (
     <div>
-      <button type="button">Search</button>
+      <button type="button">{props}</button>
     </div>
   );
 }
