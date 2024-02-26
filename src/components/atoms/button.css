@@ -4,11 +4,25 @@ body {
 }
 
 button {
-    height: 8vh;
+    padding: 7px;    
     width: fit-content;
-    padding: 8px;
     color: #000;
     border: none;
-    background: #9de8eb96;
+    background: #f1770480;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+    button {
+        height: fit-content;
+        width: min(100% 25px);
+        color: #fcfbfb;
+        border: none;
+        background: #11111196;
+        border-radius: 10px;
+        font-size: medium;
+        align-items: center;
+        justify-content: center;
+    }
 }

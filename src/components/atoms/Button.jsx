@@ -1,10 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './button.css';
 
-function Button(props) {
+function Button({ action, name }) {
   return (
     <div>
-      <button type="button">{props}</button>
+      <button type="button" onClick={action}>
+        {name || ''}
+      </button>
     </div>
   );
 }
