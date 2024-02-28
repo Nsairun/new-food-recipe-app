@@ -15,14 +15,14 @@ body {
 .heading {
   background-image: linear-gradient(
       to bottom,
-      rgba(10, 10, 10, 0.13),
-      rgba(3, 3, 3, 0.993)
+      rgba(134, 133, 133, 0.13),
+      rgba(3, 3, 3, 0.685)
     ),
     url('../images/food1.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   position: relative;
   display: flex;

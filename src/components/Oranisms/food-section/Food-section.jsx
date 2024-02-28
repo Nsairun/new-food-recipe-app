@@ -11,6 +11,9 @@ import {
   updateLocaleStorage,
 } from '../../../service/utils';
 import EditForm from '../EditForm/EditForm';
+import Delivery from './Delivery-section';
+import Cards from '../../atoms/Cards';
+// import Cards from '../../atoms/Cards';
 
 function FoodSection() {
   const { foodData, setFoodData, editData, setEditData, searchData, foodRef } =
@@ -56,7 +59,7 @@ function FoodSection() {
       {editData?.showform && (
         <EditForm food={editData.data} setEditData={setEditData} />
       )}
-      <h1>Food Section</h1>
+      <h1> Added Food Section</h1>
       <div ref={foodRef} className="foodContainer">
         {foodData?.map((food) => (
           <div className="food-section" key={food.ti}>
@@ -83,6 +86,42 @@ function FoodSection() {
             </div>
           </div>
         ))}
+        <div>
+          <div>
+            <h1
+              style={{
+                fontSize: '40px',
+                fontWeight: 'bolder',
+                textAlign: 'center',
+              }}
+            >
+              Delivery Section
+            </h1>
+          </div>
+          <Delivery />
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginTop: '5%',
+              padding: '5%',
+            }}
+          >
+            <Cards
+              title="Fastest Delivery"
+              description="Numquam voluptatibus ea, explicabo inventore veritatis eius saepe quam assumenda sunt architecto adipisci iste distinctio alias nisi."
+            />
+            <Cards
+              title="So Much To Choose From "
+              description="Numquam voluptatibus ea, explicabo inventore veritatis eius saepe quam assumenda sunt architecto adipisci iste distinctio alias nisi."
+            />
+            <Cards
+              title="Best Offers In Town"
+              description="Numquam voluptatibus ea, explicabo inventore veritatis eius saepe quam assumenda sunt architecto adipisci iste distinctio alias nisi."
+            />
+          </div>
+        </div>
       </div>
     </>
   );

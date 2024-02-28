@@ -1,0 +1,40 @@
+.test{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.testimony {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5%;
+}
+
+.testimony img {
+    height: 50vh;
+    width: 30vw;
+}
+
+.customer {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    gap: 3.5rem;
+}
+
+.customer h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.customer p {
+    text-align: start;
+    line-height: 25px;
+    width: 45vw;
+}
