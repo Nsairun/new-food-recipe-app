@@ -1,0 +1,233 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .login {
+    color: #333333;
+  }
+  
+  .signup {
+    color: #610ceb;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 30px;
+  }
+  
+  .slide-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .slide {
+    background-color: transparent;
+    border: none;
+    color: #999999;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    transition: color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .slide.active {
+    color: #0833be;
+  }
+  
+  .slider-tab {
+    background-color: #333333;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .form-inner {
+    transition: transform 0.3s ease;
+  }
+  
+  .login-form {
+    transform: translateX(0);
+  }
+  
+  .signup-form {
+    transform: translateX(-100%);
+  }
+  
+  .field {
+    margin-bottom: 20px;
+  }
+  
+  .field-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .pass-link button {
+    background-color: transparent;
+    border: none;
+    color: #999999;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    padding: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .pass-link button:hover {
+    color: #333333;
+  }
+  
+  .field.btn {
+    position: relative;
+  }
+  
+  .btn-layer {
+    background-color: #333333;
+    border-radius: 4px;
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+  }
+  
+  .btn-layer:hover {
+    opacity: 0.2;
+  }
+  
+  input[type='submit'] {
+    background-color: #333333;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  input[type='submit']:hover {
+    background-color: #555555;
+  }
+  
+  .signup-link {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-link button {
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    padding: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-link button:hover {
+    color: #555555;
+  }
+  
+  input[type='radio'] {
+    display: none;
+  }
+  
+  .slide-controls label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+  }
+  
+  .slide-controls label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999999;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .slide-controls label:hover:before {
+    border-color: #333333;
+  }
+  
+  input[type='radio']:checked + label:before {
+    border-color: #333333;
+  }
+  
+  .slide-controls label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #333333;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+  
+  input[type='radio']:checked + label:after {
+    transform: scale(1);
+  }

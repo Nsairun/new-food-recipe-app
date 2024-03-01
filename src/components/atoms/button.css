@@ -6,11 +6,18 @@ body {
 button {
     padding: 7px;    
     width: fit-content;
-    color: #000;
+    color: #fff;
     border: none;
-    background: #f1770480;
+    background: #f17704e1;
     border-radius: 10px;
     cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    color: #fcfbfb;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 760px) {

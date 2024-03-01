@@ -17,7 +17,7 @@ function Recipes() {
           style={{ width: '25vw' }}
           className="recipe-holder"
         >
-          <h1 style={{ textAlign: 'left' }}>{recipe.name}</h1>
+          <h1 style={{ textAlign: 'left', fontSize: '20px' }}>{recipe.name}</h1>
           <img src={recipe.image} alt="recipe" />
           <p style={{ textAlign: 'left' }}>{recipe.description}</p>
         </div>

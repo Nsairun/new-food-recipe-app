@@ -31,6 +31,18 @@ function NavBar() {
     navigate('/fav');
   }
 
+  function handleNavigateToHero() {
+    navigate('/Hero');
+  }
+
+  function handleNavigateToHomePage() {
+    navigate('/');
+  }
+
+  function handleNavigateToLogin() {
+    navigate('/login');
+  }
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -51,6 +63,29 @@ function NavBar() {
         <div>
           <Button action={handleSearch} name={<CiSearch />} />
         </div>
+      </div>
+      <div style={{ display: 'flex', gap: '1rem', padding: '5px' }}>
+        <button
+          type="button"
+          onClick={handleNavigateToHomePage}
+          style={{ backgroundColor: 'transparent' }}
+        >
+          HomePage
+        </button>
+        <button
+          type="button"
+          style={{ backgroundColor: 'transparent' }}
+          onClick={handleNavigateToLogin}
+        >
+          SignIn
+        </button>
+        <button
+          type="button"
+          onClick={handleNavigateToHero}
+          style={{ backgroundColor: 'transparent' }}
+        >
+          OrderPage
+        </button>
       </div>
     </div>
   );

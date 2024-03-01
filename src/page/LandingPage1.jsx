@@ -4,27 +4,33 @@ import { useNavigate } from 'react-router-dom';
 import Cards from '../components/atoms/Cards';
 import Recipes from '../components/Oranisms/LandingRecipes/recipes';
 import Testimony from '../components/Oranisms/LandingRecipes/Testimony';
+import NavBar from '../components/Oranisms/navBar/NavBar';
+import Footer from '../components/Oranisms/footer/Footer';
 
 function LandingPage1() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate('/hero');
+    navigate('/login');
   }
   return (
     <div className="landing-container">
+      <NavBar />
       <div className="landing">
         <h1>WELCOME TO OUR RESTAURANT</h1>
         <p>we have a variety of african meals to offer you</p>
-        <button type="button" onClick={handleClick}>
-          Next Page
-        </button>
+        <div>
+          <button type="button" onClick={handleClick}>
+            Next Page
+          </button>
+        </div>
       </div>
       <h1
         style={{
           textAlign: 'center',
           fontWeight: '700',
-          fontSize: '30px',
+          fontSize: '35px',
+          marginTop: '3%',
         }}
       >
         Our Services
@@ -56,7 +62,8 @@ function LandingPage1() {
           style={{
             textAlign: 'center',
             fontWeight: '700',
-            fontSize: '30px',
+            fontSize: '35px',
+            marginBottom: '3%',
           }}
         >
           Recipes
@@ -64,9 +71,12 @@ function LandingPage1() {
         <div>
           <Recipes />
         </div>
-        <div>
+        <div style={{ marginTop: '3%' }}>
           <Testimony />
         </div>
+      </div>
+      <div style={{ width: '100%' }}>
+        <Footer />
       </div>
     </div>
   );
