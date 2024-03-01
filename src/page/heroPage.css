@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -39,7 +39,12 @@ body {
 }
 
 .favFood {
-  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50vw;
 }
 
 .favFood button {
